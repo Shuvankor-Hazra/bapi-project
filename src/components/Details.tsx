@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import img from '../assets/details.jpg';
+import { FaRegHeart } from 'react-icons/fa';
+import { GoShareAndroid } from 'react-icons/go';
 
 const Details = () => {
   const [count, setCount] = useState(0);
@@ -31,7 +33,7 @@ const Details = () => {
           style={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '15px',
+            gap: '30px',
           }}
         >
           <h2 style={{ fontSize: '26px', fontWeight: '500' }}>Hub Accent Mirror</h2>
@@ -49,7 +51,7 @@ const Details = () => {
 
           {/* Count Section */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid #000', borderRadius: '5px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid', borderRadius: '5px' }}>
               <button
                 onClick={() => setCount(count > 0 ? count - 1 : 0)}
                 style={{
@@ -85,10 +87,23 @@ const Details = () => {
                 cursor: 'pointer',
                 border: '1px solid #000',
                 borderRadius: '5px',
+                textTransform:'uppercase',
+                fontSize: '14px',
+                fontWeight: '600'
               }}
             >
               Add to cart
             </button>
+          </div>
+          <div style={{ display: 'flex', gap: '30px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <FaRegHeart />
+              <span style={{ fontSize: '14px', textTransform:'uppercase' }}>Add to Wishlist</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <GoShareAndroid />
+              <span style={{ fontSize: '14px', textTransform:'uppercase' }}>Share</span>
+            </div>
           </div>
         </div>
       </div>
@@ -133,7 +148,7 @@ const Details = () => {
                 fontSize: '14px',
                 lineHeight: '2',
                 listStyle: 'inside',
-                listStyleType:'revert'
+                listStyleType: 'revert'
               }}
             >
               <li>Created with cotton fabric, soft and smooth</li>
