@@ -131,9 +131,9 @@ const Details = () => {
             <ul
               style={{
                 fontSize: '14px',
-                lineHeight: '1.6',
-                paddingLeft: '20px',
-                listStyle: 'outside',
+                lineHeight: '2',
+                listStyle: 'inside',
+                listStyleType:'revert'
               }}
             >
               <li>Created with cotton fabric, soft and smooth</li>
@@ -149,10 +149,9 @@ const Details = () => {
             <ol
               style={{
                 fontSize: '14px',
-                lineHeight: '1.6',
-                paddingLeft: '20px',
-                listStyle: 'outside',
-                listStyleType: 'decimal',
+                lineHeight: '2',
+                listStyle: 'inside',
+                listStyleType: 'revert',
               }}
             >
               <li>Create store-specific attributes on the fly</li>
